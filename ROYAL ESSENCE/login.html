@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Essence</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+
+    <style>
+        /* Custom navbar link styles */
+        .navbar-nav .nav-link {
+            color: #555; /* Default link color */
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff; /* Color on hover */
+        }
+
+        /* Active link color */
+        .navbar-nav .nav-link.active {
+            color: #007bff !important; /* Active link color */
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Fade-in animation for navbar */
+        .navbar {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Royal Essence</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-lg-3 ms-0">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 ms-0">
+                        <a class="nav-link" href="#shop">Shop</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 ms-0">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 ms-0">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 ms-0">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#Modal">Sign In</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section with Smooth Scroll (Optional: GSAP animation) -->
+    <div class="container-fluid p-0" data-bs-spy="scroll" data-bs-target="nav" data-bs-root-margin="0px 0px -40%" tabindex="0">
+        <section id="home" style="height: 100vh; background-color: #f0f0f0;">
+            <h1>Home Section</h1>
+        </section>
+        <section id="shop" style="height: 100vh; background-color: #e0e0e0;">
+            <h1>Shop Section</h1>
+        </section>
+        <section id="about" style="height: 100vh; background-color: #d0d0d0;">
+            <h1>About Us Section</h1>
+        </section>
+        <section id="contact" style="height: 100vh; background-color: #c0c0c0;">
+            <h1>Contact Section</h1>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // GSAP animation for the navbar (fade-in effect)
+        gsap.to('.navbar', { opacity: 1, duration: 1, delay: 0.5 });
+
+        // GSAP animation for smooth scrolling (optional)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                gsap.to(window, {
+                    scrollTo: e.target.getAttribute('href'),
+                    duration: 1
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
