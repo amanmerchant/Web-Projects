@@ -1,0 +1,456 @@
+*{
+    font-family: plarfair;
+}
+
+#navbar{
+    height: 300px;
+    width: 40%;
+}
+
+@media (max-width:990px){
+    #navbar{
+    margin-top: 62px;
+    }
+    .offcanvas-body{
+    background-color: #0A2239;
+    }
+    #login{
+        width: 100px;
+    }
+}
+/* General Styles */
+body{
+    background-color: white;
+    color: #2C2C2C; /* Dark Gray for text */
+}
+
+/* Navbar Styles */
+.navbar{
+    background-color: #0A2239; /* Deep Navy Blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    color: #D4AF37 !important; /* Metallic Gold */
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+    height: 30px;
+}
+
+.nav-link {
+    color: #EDEDED !important; /* Soft Ivory for text links */
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #D4AF37 !important; /* Metallic Gold on hover */
+    transform: scale(1.1); /* Slight zoom for interactivity */
+}
+
+/* Underline Effect for Nav Links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37; /* Metallic Gold */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Offcanvas Styles */
+.offcanvas {
+    background-color: #0A2239; /* Deep Navy Blue */
+    color: #EDEDED; /* Soft Ivory */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #EDEDED; /* Subtle border for separation */
+}
+
+.offcanvas-title {
+    color: #D4AF37; /* Metallic Gold */
+}
+
+/* Button Styles */
+#login {
+    background-color: #D4AF37; /* Metallic Gold */
+    border: none;
+    color: #0A2239; /* Deep Navy for text */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#login:hover {
+    background-color: white; /* Lighter Gold */
+    color: #0A2239; /* Deep Navy */
+}
+
+
+.hero {
+    background: url('IMAGES/moto-7182384.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* General Styles */
+.animated-heading, .animated-paragraph {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: moveText 4s linear infinite alternate, changeColor 4s linear infinite alternate;
+}
+
+#text {
+    background-image: linear-gradient(90deg, white, rgb(245, 245, 111)); /* Gradient from white to black */
+    background-size: 200% 200%; /* Create a large gradient to animate */
+    background-color: transparent; /* Make the background transparent */
+    color: transparent; /* Make the text color transparent */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For compatibility with Safari */
+    animation: text 4s alternate infinite ease; /* Apply animation */
+}
+
+@keyframes text {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* From Uiverse.io by alexroumi */ 
+#fix,#know {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #0A2239;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   #fix::before,#know::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0A2239;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+   }
+   
+   #fix:hover,#know:hover {
+    color: white;
+   }
+   
+   #fix:hover::before,#know:hover::before {
+    width: 100%;
+   }
+   /* Problem Fixing Section */
+
+/* Button Styling */
+#problem a {
+    background-color: #0a2239;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/* Button Hover Effect */
+#problem a:hover {
+    background-color: #D4AF37; /* Gold color for hover */
+}
+
+
+/* Card Styling */
+#defaultCards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Ensuring Images do not affect height and remain consistent */
+#defaultCards .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Equalizing Card Height */
+#defaultCards .card-body {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Card Title Styling */
+#defaultCards .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #0a2239;
+}
+
+/* Card Text Styling */
+#defaultCards .card-text {
+    color: #6c757d;
+    flex-grow: 1;
+}
+
+/* Hover Effects for Premium Look */
+#defaultCards .hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+/* About Section Styling */
+#about,#problem,#locator,#contact{
+    padding-top: 80px;
+}
+
+/* Heading Styling */
+#about h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #0a2239;
+}
+
+/* Description Styling */
+#about p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+#about img {
+    border: 5px solid #D4AF37; /* Gold border around images */
+}
+
+/* Client, Service, Owner Section Card Styling */
+.row.mb-5 {
+    display: flex;
+    align-items: center;
+}
+
+/* For mobile view (Image on top, Description below) */
+@media (max-width: 768px) {
+    .order-md-1, .order-md-2 {
+        order: unset;
+    }
+}
+
+/* Premium Hover Effect */
+.row.mb-5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Locator Section Styling */
+
+
+/* Map Styling */
+#map {
+    border: 5px solid #D4AF37; /* Gold border around the map */
+}
+
+h2 {
+    color: #0a2239;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #0a2239;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #D4AF37;
+}
+
+/* Contact Details Section */
+.contact-details {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #0a2239;
+}
+
+.contact-details h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+/* Section Styling */
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
+  /* Footer Styling */
+
+  
+  .fm-footer {
+    background-color: #0a2239;
+    color: #ffffff;
+    padding: 40px 20px;
+  }
+  
+  .fm-footer h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+  }
+  
+  .fm-footer h4 {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .fm-footer p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .fm-footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .fm-footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .fm-footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .fm-footer ul li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #ffcc00;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .fm-footer ul li a:hover::after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .footer-contact strong {
+    color: #ffcc00;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    background: #ffffff;
+    color: #0a2239;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background: #ffcc00;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
