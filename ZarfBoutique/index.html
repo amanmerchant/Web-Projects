@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
+    <title>Zarf Boutique</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Images/logo.png" height="40" alt="">ZARF BOUTIQUE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home"><i class="fas fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fas fa-book-open"></i> Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features"><i class="fas fa-circle-check"></i> Why Choose Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products"><i class="fas fa-box-open"></i> Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+ <!-- Hero Section -->
+<section class="hero" id="home">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="Images/banner.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Zarf – Enveloping You in the Calibre of the Sahabiyat</h1>
+            <p>Authentic Shariah-Compliant Attire. Modesty that Reflects Dignity & Grace.</p>
+            <a href="#products" class="btn btn-primary btn-lg">
+                <i class="fas fa-cart-shopping"></i> Shop Now
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-book-open"></i> Our Story</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img d-flex">
+                        <img src="Images/about.jpg"
+                            alt="About Zarf" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>Our Journey</h3>
+                        <p>Bi'idhniAllahi ta'aala, Zarf was born from a shared struggle—finding <strong>true</strong>
+                            modest clothing that upholds dignity without compromise.</p>
+                        <p>We seek to revive the Sunnah of the Sahabiyat by crafting abayas and khimars that reflect
+                            <strong>authentic Islamic modesty—affordable, elegant, and truly Shariah-compliant.</strong>
+                        </p>
+                        <p>Zarf isn't just clothing—it's a mission, a revival, a commitment to faith.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-circle-check"></i> Why Choose Zarf?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-praying"></i>
+                        </div>
+                        <h3>Faith-Driven Commitment</h3>
+                        <p>Zarf exists to serve the Deen, empowering sisters to uphold their Muslim identity without the
+                            pressure of trends.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star-and-crescent"></i>
+                        </div>
+                        <h3>Shariah-Compliant</h3>
+                        <p>Our garments are not just about fulfilling Shariah requirements—they represent grace,
+                            dignity, and faith.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Affordable Elegance</h3>
+                        <p>Because modesty should be effortless—accessible, high-quality attire designed with sincerity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+ <section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-box-open"></i> Our Products</h2>
+        <div class="filter-buttons">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-border-all"></i> All</button>
+                <button class="filter-btn" data-filter="abaya"><i class="fas fa-user-shield"></i> Abaya</button>
+                <button class="filter-btn" data-filter="hijab"><i class="fas fa-headscarf"></i> Hijab</button>
+                <button class="filter-btn" data-filter="jilbab"><i class="fas fa-user-ninja"></i> Jilbab</button>
+                <button class="filter-btn" data-filter="khimar"><i class="fas fa-user-secret"></i> Khimar</button>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="abaya">
+                <div class="product-img">
+                    <img src="Images/Hijab1.jpg" alt="Crimson Flow Abaya">
+                </div>
+                <div class="product-info">
+                    <h3>Crimson Flow Abaya</h3>
+                    <p>Pure, timeless elegance—crafted for comfort, designed for dignity.</p>
+                    <div class="product-price">$55.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jilbab">
+                <div class="product-img">
+                    <img src="Images/Hijab2.jpg" alt="Earthy Tone Jilbab">
+                </div>
+                <div class="product-info">
+                    <h3>Earthy Tone Jilbab</h3>
+                    <p>Soft, breathable fabric that provides comfort throughout the day.</p>
+                    <div class="product-price">$45.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="abaya">
+                <div class="product-img">
+                    <img src="Images/Hijab3.jpg" alt="Midnight Black Abaya">
+                </div>
+                <div class="product-info">
+                    <h3>Midnight Black Abaya</h3>
+                    <p>Loose-flowing, breathable, and designed for complete coverage.</p>
+                    <div class="product-price">$59.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="abaya">
+                <div class="product-img">
+                    <img src="Images/Hijab4.jpg" alt="Simple Black Abaya">
+                </div>
+                <div class="product-info">
+                    <h3>Simple Black Abaya</h3>
+                    <p>Effortless drape, full coverage, and softness that reflects the beauty of modesty.</p>
+                    <div class="product-price">$52.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="khimar">
+                <div class="product-img">
+                    <img src="Images/Hijab5.jpg" alt="Forest Green Khimar">
+                </div>
+                <div class="product-info">
+                    <h3>Forest Green Khimar</h3>
+                    <p>Classic design with modern comfort for everyday wear.</p>
+                    <div class="product-price">$32.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hijab">
+                <div class="product-img">
+                    <img src="Images/Hijab6.jpg" alt="Classic Black Hijab">
+                </div>
+                <div class="product-info">
+                    <h3>Classic Black Hijab</h3>
+                    <p>Subtle patterns that add personality while maintaining modesty.</p>
+                    <div class="product-price">$25.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="abaya">
+                <div class="product-img">
+                    <img src="Images/Hijab7.jpg" alt="Olive Drape Abaya">
+                </div>
+                <div class="product-info">
+                    <h3>Olive Drape Abaya</h3>
+                    <p>Comfortable and elegant, perfect for any occasion.</p>
+                    <div class="product-price">$62.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="hijab">
+                <div class="product-img">
+                    <img src="Images/Hijab8.jpg" alt="Soft Olive Hijab">
+                </div>
+                <div class="product-info">
+                    <h3>Soft Olive Hijab</h3>
+                    <p>Lightweight and versatile, offering graceful coverage.</p>
+                    <div class="product-price">$28.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="jilbab">
+                <div class="product-img">
+                    <img src="Images/Hijab9.jpg" alt="Dark Earth Jilbab">
+                </div>
+                <div class="product-info">
+                    <h3>Dark Earth Jilbab</h3>
+                    <p>A modest and stylish choice for daily wear.</p>
+                    <div class="product-price">$48.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="abaya">
+                <div class="product-img">
+                    <img src="Images/Hijab10.jpg" alt="Stone Gray Abaya">
+                </div>
+                <div class="product-info">
+                    <h3>Stone Gray Abaya</h3>
+                    <p>Elegance and comfort combined in a timeless design.</p>
+                    <div class="product-price">$57.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="khimar">
+                <div class="product-img">
+                    <img src="Images/Hijab11.jpg" alt="Charcoal Khimar">
+                </div>
+                <div class="product-info">
+                    <h3>Charcoal Khimar</h3>
+                    <p>Effortless and modest, perfect for everyday elegance.</p>
+                    <div class="product-price">$30.00</div>
+                      <button class="btn btn-outline-success know-details">Know Details</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Our Location</h3>
+                                <p>India (Maharashtra, Uttar Pradesh, Kashmir)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <a href="mailto:zarfboutique.com">zarfboutique@gmail.com</a>
+                            </div>
+                        </div>
+                
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/" target="_blank">+91 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">ZAR<span>F</span> BOUTIQUE</a>
+                    <p>Helping You Fulfill the Conditions of Correct Jilbab/Hijab with Ease & Dignity.</p>
+                    
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-book-open"></i> Our Story</a></li>
+                            <li><a href="#features"><i class="fas fa-circle-check"></i> Why Choose Us</a></li>
+                            <li><a href="#products"><i class="fas fa-box-open"></i> Products</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Abayas</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Hijabs</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Jilbabs</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Khimars</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-social-links">
+                        <h4>Social Links</h4>
+                        <div class="social-links">
+                        <a href="https://www.facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/91726888" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zarf Boutique. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="https://wa.me/" class="floating-btn whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
+</html>
